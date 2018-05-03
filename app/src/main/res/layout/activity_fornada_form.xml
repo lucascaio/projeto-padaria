@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.FornadaFormActivity">
+
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="@string/descricao"/>
+    
+    <Button
+        android:id="@+id/buttonDate"
+        app:layout_constraintTop_toBottomOf="@+id/editDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Selecione a data"
+        />
+
+    <Button
+        android:id="@+id/buttonAddFornada"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Adicionar fornada"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
